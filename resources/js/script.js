@@ -2,14 +2,14 @@ $(document).ready(function() {
 
 
     /* For the sticky navigation */
-    $('.js--section-features').waypoint(function(direction) {
+    $('.js--section-features').waypoint(function(direction){
         if (direction == "down") {
             $('nav').addClass('sticky');
         }else {
             $('nav').removeClass('sticky');
         }
     }, {
-        offset: '60%;'
+        offset: '60%'
     });
 
     /*Scroll on buttons*/
@@ -35,6 +35,31 @@ $(document).ready(function() {
           }
         }
       });
+    });
+
+    /* Animation on scroll */
+    $('.js--wp-1').waypoint(function(direction) {
+        $('.js--wp-1').addClass('animate__fadeIn');
+    }, {
+        offset: '50%'
+    });
+
+    $('.js--wp-2').waypoint(function(direction) {
+        $('.js--wp-2').addClass('animat__fadeIn');
+    }, {
+        offset: '50%'
+    });
+
+    $('.js--wp-3').waypoint(function(direction) {
+        $('.js--wp-3').addClass('animate__fadeInUp');
+    }, {
+        offset: '50%'
+    });
+
+    $('.js--wp-4').waypoint(function(direction) {
+        $('.js--wp-4').addClass('animate__pulse');
+    }, {
+        offset: '50%'
     });
 
 });
