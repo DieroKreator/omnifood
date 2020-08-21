@@ -51,7 +51,7 @@ $(document).ready(function() {
     });
 
     $('.js--wp-3').waypoint(function(direction) {
-        $('.js--wp-3').addClass('animate__fadeInUp');
+        $('.js--wp-3').addClass('animate__fadeIn');
     }, {
         offset: '50%'
     });
@@ -60,6 +60,22 @@ $(document).ready(function() {
         $('.js--wp-4').addClass('animate__pulse');
     }, {
         offset: '50%'
+    });
+
+    /* Mobile nav */
+    $('.js--nav-icon').click(function() {
+        var nav = $('js--main-nav');
+        var icon = $('js--nav-icon');
+
+        nav.slideToggle(200);
+        if(icon.hasClass('menu-outline')) {
+           icon.addClass('close-outline')
+           icon.removeClass('menu-outline')
+        }else {
+           icon.addClass('menu-outline')
+           icon.removeClass('close-outline')
+        }
+
     });
 
 });

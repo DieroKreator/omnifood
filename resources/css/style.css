@@ -24,7 +24,7 @@ body, {
 }
 
 .clearfix {zoom: 1}
-clearfix:after {
+.clearfix:after {
     content: '.';
     clear: both;
     display: block;
@@ -64,6 +64,7 @@ h1 {
     color: #fff;
     font-size: 240%;
     word-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 h2 {
@@ -249,6 +250,19 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* Sticky navi */
 .sticky {
     position: fixed;
@@ -276,7 +290,7 @@ header {
 /* -------------------------------------------- */
 
 .section-features .long-copy {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 /* -------------------------------------------- */
